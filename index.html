@@ -16,7 +16,31 @@
             max-width: 800px;
             margin: auto;
         }
+        .header {
+        background-color: #F1F1F1;
+        text-align: center;
+        padding: 20px;
+        }
+        .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
         /* navigation menu */
         nav {
             background: rgb(73, 158, 255);
@@ -61,6 +85,26 @@
         .interests header {
             font-size: 1.25em;
         }
+        .column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
     </style>
     </head>
     
@@ -78,6 +122,11 @@
                 <div class="sidebar">
                     <img src=https://junkee.com/wp-content/uploads/2018/11/Drag-Race-cast.jpg>
                 </div>
+                <div class="topnav">
+                    <a href="#">place online order</a>
+                    <a href="#">Browse selection</a>
+                    <a href="#">Search</a>
+                  </div>
                 <div class="content">
                     <header>I'keem</header>
                     <p>senoir student</p>
